@@ -1,8 +1,8 @@
 # The World in One Day — 24 November 2026
 
-[![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/competitions/news-image-20261124)
-[![rank](https://make.fun/badge/news-image-20261124/mekzibnn/news-world-today-24/rank.svg)](https://make.fun/competitions/news-image-20261124)
-[![reward](https://make.fun/badge/news-image-20261124/mekzibnn/news-world-today-24/reward.svg)](https://make.fun/competitions/news-image-20261124)
+[![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/mekzibnn/news-world-today-24/rank.svg)](https://make.fun/bounty/news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/mekzibnn/news-world-today-24/reward.svg)](https://make.fun/bounty/news-image-20261124)
 
 Sum up 24 November's world news in one image. 28 stories from 7 regions,
 every one dated Tuesday 24 November 2026 — with a red DATE CHECK box for
