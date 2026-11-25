@@ -595,7 +595,14 @@ def render():
         x = MX + i * (card_w + 12)
         d.rectangle([x, big_y, x + card_w, big_y + big_h], fill=CARD_BG,
                     outline=CARD_LINE)
-        pic_fns[kind](img, int(x + 1), big_y + 1, int(card_w - 2), pic_h)
+        # Clip the pictorial to its band: draw on a separate layer so no
+        # flame/glow/smoke can escape above the band into the timeline.
+        # (v5 bug: the fire pictorial's main flame rose 17px above the band
+        # and covered "Shenzhou-24" in the timeline.)
+        pic_w = int(card_w - 2)
+        layer = Image.new("RGBA", (pic_w, pic_h), (0, 0, 0, 0))
+        pic_fns[kind](layer, 0, 0, pic_w, pic_h)
+        img.alpha_composite(layer, (int(x + 1), big_y + 1))
         ty = big_y + pic_h + 4
         d.text((x + 8, ty), kicker, font=F_SANS_B(F_KICK), fill=RED)
         hl = wrap(d, headline, F_SANS_B(F_HEAD_BIG), card_w - 16)
